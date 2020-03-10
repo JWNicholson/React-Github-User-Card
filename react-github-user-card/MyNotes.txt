@@ -1,0 +1,6 @@
+Required data - my profile
+                my followers
+
+Compnents needed - App.js 
+                   myinfo.js 
+                   followers.js
