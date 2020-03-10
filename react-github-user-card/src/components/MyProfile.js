@@ -22,9 +22,16 @@ const ProfileCardWrapper = styled.div`
     box-shadow:         1px 1px 6px 0px rgba(50, 50, 50, 0.75);
 `;
 
+const MyGhChartImage = styled.img`
+    max-width:94%;
+    margin:14px auto;
+    background-color:darkslategrey;
+`;
+
 // profile display
 const MyProfile = props => {
     return (
+        <>
         <ProfileCardWrapper>
             <ProfileImage src={props.user.avatar_url} alt="JW Nicholson" />
             <div className="nameDiv">
@@ -32,8 +39,12 @@ const MyProfile = props => {
                 <p><strong>GitHub Username:</strong></p>
                 <p>{props.user.login}</p>
                 <p><strong>Followers:</strong> {props.user.followers}</p>
+               
             </div>
+            
         </ProfileCardWrapper>
+         <MyGhChartImage src="http://ghchart.rshah.org/JWNicholson" alt="JWNicholson GitHub chart"></MyGhChartImage>
+         </>
     );
 };
 
