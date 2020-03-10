@@ -5,6 +5,9 @@ const ProfileImage = styled.img`
     max-width:380px;
     height:auto;
     border: 1px solid #91b0ae;
+    -webkit-box-shadow: 1px 1px 2px 0px rgba(145, 176, 174, 0.54);
+    -moz-box-shadow:    1px 1px 2px 0px rgba(145, 176, 174, 0.54);
+    box-shadow:         1px 1px 2px 0px rgba(145, 176, 174, 0.54);
 `;
 
 const ProfileCardWrapper = styled.div`
@@ -14,7 +17,9 @@ const ProfileCardWrapper = styled.div`
     border:1px solid #91b0ae;
     margin:24px auto;
     padding-top:24px;
-   
+    -webkit-box-shadow: 1px 1px 6px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    1px 1px 6px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         1px 1px 6px 0px rgba(50, 50, 50, 0.75);
 `;
 
 // profile display

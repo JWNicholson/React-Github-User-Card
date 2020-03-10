@@ -5,6 +5,9 @@ const FollowerImage = styled.img`
     width:160px;
     height:auto;
     border: 1px solid #d88429;
+    -webkit-box-shadow: 1px 1px 2px 0px rgba(145, 176, 174, 0.54);
+    -moz-box-shadow:    1px 1px 2px 0px rgba(145, 176, 174, 0.54);
+    box-shadow:         1px 1px 2px 0px rgba(145, 176, 174, 0.54);
 `;
 
 const FollowerCardWrapper = styled.div`
@@ -15,6 +18,10 @@ const FollowerCardWrapper = styled.div`
     border:1px solid #d88429;
     margin:24px;
     padding-top:24px;
+
+    -webkit-box-shadow: 1px 1px 6px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    1px 1px 6px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         1px 1px 6px 0px rgba(50, 50, 50, 0.75);
 `;
 
 const FollowersDiv = styled.div`
@@ -22,6 +29,7 @@ const FollowersDiv = styled.div`
     display:flex;
     flex-wrap:wrap;
     justify-content:space-around;
+    border-top:1px solid darkslategrey;
 `;
 
 //followers display

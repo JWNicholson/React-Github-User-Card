@@ -3,6 +3,14 @@ import axios from 'axios';
 import './App.css';
 import MyProfile from './components/MyProfile';
 import FollowersList from './components/FollowersList';
+import styled from 'styled-components';
+
+const StyledH1 = styled.h1`
+color:#f3f1e0;
+text-shadow:1px 1px 2px #91B0AE;
+`;
+  
+
 
 class App extends React.Component {
  state = {
@@ -35,7 +43,7 @@ componentDidMount() {
    return (
     <div className="App">
      
-    <h1>GitHub User Info</h1>
+    <StyledH1>GitHub User Info</StyledH1>
     <MyProfile user={this.state.user} />
     <FollowersList 
       key={this.state.followers}
