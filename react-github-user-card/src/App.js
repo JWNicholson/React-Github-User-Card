@@ -1,7 +1,5 @@
 import React from 'react';
 import axios from 'axios';
-// import MyProfile from "./components/MyProfile";
-// import FollowersList from './components/MyProfile';
 import './App.css';
 import MyProfile from './components/MyProfile';
 import FollowersList from './components/FollowersList';
@@ -36,12 +34,14 @@ componentDidMount() {
    
    return (
     <div className="App">
+     
     <h1>GitHub User Info</h1>
     <MyProfile user={this.state.user} />
     <FollowersList 
       key={this.state.followers}
       followers={this.state.followers} 
       />
+    
   </div>
    )
   

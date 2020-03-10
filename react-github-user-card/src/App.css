@@ -1,6 +1,10 @@
 .App {
   text-align: center;
-  background-color: #bca655;
+  background-color:#d88429;
+  display: flex;
+  flex-direction: column;
+  max-width: 980px;
+  margin:auto;
 }
 
 .App-header {

@@ -2,33 +2,42 @@ import React from 'react';
 import styled from 'styled-components';
 
 const FollowerImage = styled.img`
-    max-width:180px;
+    width:160px;
     height:auto;
+    border: 1px solid #d88429;
 `;
 
 const FollowerCardWrapper = styled.div`
     background-color: #f3f1e0;
-    width:20%;
+    min-width:200px;
+    max-width:480px;
     height:280px;
-    border:1px solid #91b0ae;
+    border:1px solid #d88429;
     margin:24px;
     padding-top:24px;
+`;
+
+const FollowersDiv = styled.div`
+    background-color:#91b0ae;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
 `;
 
 //followers display
 const FollowersList = props => {
     return (
-        <div className="followersCont">
+        <FollowersDiv>
           {props.followers.map(person => (
             <FollowerCardWrapper>
               <FollowerImage  src={person.avatar_url} alt="github user image" />
               <div className="nameDiv">
-                <p><strong>GitHub Name:</strong> {person.login}</p>
-                <p></p>
+                <p><strong>GitHub Name:</strong></p>
+                <p>{person.login}</p>
               </div>
             </FollowerCardWrapper>
           ))}
-        </div>
+        </FollowersDiv>
     );
   };
   
