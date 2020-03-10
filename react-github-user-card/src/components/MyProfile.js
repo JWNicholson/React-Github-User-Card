@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const ProfileImage = styled.img`
-    max-width:380px;
+    max-width:80%;
     height:auto;
     border: 1px solid #91b0ae;
     -webkit-box-shadow: 1px 1px 2px 0px rgba(145, 176, 174, 0.54);
