@@ -1,6 +1,10 @@
 Required data - my profile
                 my followers
 
+              also: data state
+                    axios calls
+                    render card with profile and followers  
+
 Compnents needed - App.js 
                    myinfo.js 
                    followers.js
