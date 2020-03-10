@@ -33,12 +33,16 @@ componentDidMount() {
  render() {
    console.log("this.state.user- ", this.state.user);
    console.log("this.state.followers- ", this.state.followers);
-   <div className="app">
-     <h1>Git Users Cards</h1>
-     <MyProfile />
-     <FollowersList />
-   </div>
- }
+   
+   return (
+    <div className="app">
+    <h1>Git Users Cards</h1>
+    <MyProfile />
+    <FollowersList />
+  </div>
+   )
+  
+ }//end render
 
 }//end class App
 
