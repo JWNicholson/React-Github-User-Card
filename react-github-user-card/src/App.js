@@ -36,7 +36,7 @@ componentDidMount() {
    
    return (
     <div className="app">
-    <h1>Git Users Cards</h1>
+    <h1>GitHub User Info</h1>
     <MyProfile user={this.state.user} />
     <FollowersList 
       key={this.state.followers}
