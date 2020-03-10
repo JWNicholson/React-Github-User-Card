@@ -1,5 +1,7 @@
 import React from 'react';
 import axios from 'axios';
+import MyProfile from "./components/MyProfile";
+import FollowersList from './components/MyProfile';
 import './App.css';
 
 class App extends React.Component {
