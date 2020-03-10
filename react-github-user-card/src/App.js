@@ -35,7 +35,7 @@ componentDidMount() {
    console.log("this.state.followers- ", this.state.followers);
    
    return (
-    <div className="app">
+    <div className="App">
     <h1>GitHub User Info</h1>
     <MyProfile user={this.state.user} />
     <FollowersList 
