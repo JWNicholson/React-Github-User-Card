@@ -2,6 +2,7 @@ Required data - my profile
                 my followers
 
               also: data state
+                            user - object {}, folowers - array []
                     axios calls
                     render card with profile and followers  
 
